@@ -1,0 +1,20 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+requests = "*"
+pandas = "*"
+flake8-docstrings = "*"
+pyjanitor = "*"
+siuba = "*"
+
+[dev-packages]
+ipykernel = "*"
+autopep8 = "*"
+flake8 = "*"
+darglint = "*"
+
+[requires]
+python_version = "3.10"

@@ -1,0 +1,69 @@
+{
+    "people": [
+        {
+            "Name": "Jean Yang",
+            "Scopus ID": "7409391345",
+            "ORCID": "0000-0002-5271-2603"
+        },
+        {
+            "Name": "Jinman Kim",
+            "Scopus ID": "55720292700",
+            "ORCID": "0000-0001-5960-1060"
+        },
+        {
+            "Name": "Armando Teixeira-Pinto",
+            "Scopus ID": "6602574836",
+            "ORCID": "0000-0002-9389-2516"
+        },
+        {
+            "Name": "Samuel Muller",
+            "Scopus ID": "57211144312",
+            "ORCID": "0000-0002-3087-8127"
+        },
+        {
+            "Name": "John Ormerod",
+            "Scopus ID": "23480260200",
+            "ORCID": "0000-0002-4650-7507"
+        },
+        {
+            "Name": "Pengyi Yang",
+            "Scopus ID": "55479219200",
+            "ORCID": "0000-0003-1098-3138"
+        },
+        {
+            "Name": "Alistair Senior",
+            "Scopus ID": "56433777600",
+            "ORCID": "0000-0001-9805-7280"
+        },
+        {
+            "Name": "Ellis Patrick",
+            "Scopus ID": "55570070100",
+            "ORCID": "0000-0002-5253-4747"
+        },
+        {
+            "Name": "Rachel Wang",
+            "Scopus ID": "57221971766",
+            "ORCID": "0000-0003-0594-680X"
+        },
+        {
+            "Name": "Garth Tarr",
+            "Scopus ID": "54896131300",
+            "ORCID": "0000-0002-6605-7478"
+        },
+        {
+            "Name": "Clara Grazian",
+            "Scopus ID": "56025986500",
+            "ORCID": "0000-0002-4967-7720"
+        },
+        {
+            "Name": "Tongliang Liu",
+            "Scopus ID": "56297951800",
+            "ORCID": "0000-0002-9640-6472"
+        },
+        {
+            "Name": "Shila Ghazanfar",
+            "Scopus ID": "57189496802",
+            "ORCID": "0000-0001-7861-6997"
+        }
+    ]
+}
