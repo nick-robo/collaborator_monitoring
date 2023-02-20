@@ -62,6 +62,10 @@ def get_publications(
             params=params
         )
 
+    if not req:
+        raise RuntimeError("Connection failed. Status: " +
+                           str(req.status_code) + ". Reason: " + req.reason)
+
     content = req.json()["search-results"]
 
     per_req = int(content['opensearch:itemsPerPage'])
@@ -181,6 +185,11 @@ def get_authors(
         return filtered
 
     req = requests.get(url=url)
+
+    if not req:
+        raise RuntimeError("Connection failed. Status: " +
+                           str(req.status_code) + ". Reason: " + req.reason)
+
     content = req.json()
     assert isinstance(content, dict)
 
