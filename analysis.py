@@ -122,7 +122,7 @@ data = (
 data['Coauthor Name'] = data.chosen_name
 
 # drop working columns
-data = (
+data: pd.DataFrame = (
     data >>
     select(~_['CoAuth_Name'], ~_.chosen_name, ~_.n)
 )
@@ -131,7 +131,7 @@ del check_unique, weird_names
 
 # %%
 
-common_collabs = (
+common_collabs: pd.DataFrame = (
     data >>
     filter_tidy(
         ~_['Coauthor Scopus ID'].isin(_['Author Scopus ID'].unique()),
@@ -163,7 +163,7 @@ aID_temp["Coauthor Affiliation IDs"] = (
     .str.split(','))
 aID_temp = aID_temp.explode("Coauthor Affiliation IDs") >> distinct()
 
-common_collabs_aID = (
+common_collabs_aID: pd.DataFrame = (
     common_collabs >>
     join(
         _,
