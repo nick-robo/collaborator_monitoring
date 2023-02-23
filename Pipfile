@@ -13,8 +13,8 @@ siuba = "*"
 [dev-packages]
 ipykernel = "*"
 autopep8 = "*"
-flake8 = "*"
 darglint = "*"
+ruff = "*"
 
 [requires]
 python_version = "3.10"

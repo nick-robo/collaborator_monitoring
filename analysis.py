@@ -1,11 +1,24 @@
 """Analyse the data."""
 # %%
 import pandas as pd
+
 # import janitor  # noqa: F401
 from siuba import (
-    group_by, select, _, arrange, head, distinct, join, mutate, if_else,
-    filter as filter_tidy, summarize, count, ungroup, rename
+    _,
+    arrange,
+    count,
+    distinct,
+    group_by,
+    head,
+    if_else,
+    join,
+    mutate,
+    rename,
+    select,
+    summarize,
+    ungroup,
 )
+from siuba import filter as filter_tidy
 from siuba.dply.vector import n_distinct, row_number
 
 

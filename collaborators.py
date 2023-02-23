@@ -1,12 +1,13 @@
 """Functions to create a collaborator dataset."""
 # %%
-import requests
 import json
-from urllib.parse import quote, urlencode
-from itertools import chain
 from copy import copy
-import pandas as pd
+from itertools import chain
+from urllib.parse import quote, urlencode
 from warnings import warn
+
+import pandas as pd
+import requests
 
 BASE_URL = "https://api.elsevier.com/"
 SC_QUERY = "content/search/scopus?query="
