@@ -9,14 +9,18 @@ from warnings import warn
 import pandas as pd
 import requests
 
+from utils import get_project_root
+
 BASE_URL = "https://api.elsevier.com/"
 SC_QUERY = "content/search/scopus?query="
 
+root = get_project_root()
+
 API_KEY = None
-with open(".scopus_api", 'r', encoding="UTF8") as file:
+with open(root / ".scopus_api", 'r', encoding="UTF8") as file:
     API_KEY = file.readline()
 
-with open("data/research_leaders.json", "r", encoding="UTF8") as file:
+with open(root / "data/research_leaders.json", "r", encoding="UTF8") as file:
     research_leaders = json.load(file)['people']
 
 PARAMS = {

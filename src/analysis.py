@@ -1,8 +1,8 @@
 """Analyse the data."""
 # %%
 import pandas as pd
+from utils import get_project_root
 
-# import janitor  # noqa: F401
 from siuba import (
     _,
     arrange,
@@ -63,7 +63,7 @@ def clean_data(path: str) -> pd.DataFrame:
 # %%
 
 
-path = 'data/collaborator_data.csv'
+path = get_project_root() / 'data/collaborator_data.csv'
 data = clean_data(path)
 
 weird_names = (
