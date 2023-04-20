@@ -14,7 +14,7 @@ The `data` directory contains a JSON file which summarises all the relavant deta
 
 You can install all the project dependencies in a virtual environment with [Pipenv](https://pipenv.pypa.io/en/latest/index.html#install-pipenv-today). After installing Pipenv, run the following:
 
-```sh
+```shell
 pipenv sync
 ```
 
@@ -27,8 +27,8 @@ Next, modify `data/research_leaders.json` with the details of the researchers th
 
 Finally, run the following in a terminal window. This will overwrite the dataset in `data/collaborator_data.csv` with updated data based on your modified JSON file.
 
-```sh
-python src/collaborators.py
+```shell
+python ./src/collaborators.py
 ```
 
 > **Note**: To ensure that you are running the code in the correct virtual environemnt, you can run `pipenv shell` in the project root directory. This will spawn a subshell correctly configured with the required dependencies.
