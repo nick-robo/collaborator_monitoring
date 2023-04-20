@@ -1,3 +1,5 @@
 .scopus_api
 
 *.pyc
+
+.vscode
