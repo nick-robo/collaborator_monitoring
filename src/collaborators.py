@@ -50,7 +50,8 @@ def get_publications(
             publication dict. Defaults to None.
 
     Returns:
-        list[dict]: _description_
+        list[dict]: A list list of publications by the author corrisponding \
+            to `au_id`.
     """
     if url:
         req = requests.get(

@@ -1,25 +1,13 @@
 """Analyse the data."""
 # %%
 import pandas as pd
-from utils import get_project_root
-
-from siuba import (
-    _,
-    arrange,
-    count,
-    distinct,
-    group_by,
-    head,
-    if_else,
-    join,
-    mutate,
-    rename,
-    select,
-    summarize,
-    ungroup,
-)
+from siuba import _, arrange, count, distinct
 from siuba import filter as filter_tidy
+from siuba import (group_by, head, if_else, join, mutate, rename, select,
+                   summarize, ungroup)
 from siuba.dply.vector import n_distinct, row_number
+
+from utils import get_project_root
 
 
 def clean_data(path: str) -> pd.DataFrame:
